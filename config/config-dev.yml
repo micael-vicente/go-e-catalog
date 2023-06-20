@@ -1,0 +1,8 @@
+server:
+  port: 8081
+
+elastic:
+  url: http://localhost:9200
+  index: products
+  username: elastic
+  password: elastic
