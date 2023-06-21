@@ -79,7 +79,7 @@ func getTotalPages(size int, totalElements int) int {
 
 	pages := totalElements / size
 
-	if extra := size%totalElements > 0; extra {
+	if extra := totalElements%size > 0; extra {
 		return pages + 1
 	} else {
 		return pages

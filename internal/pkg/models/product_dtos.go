@@ -20,9 +20,9 @@ type Product struct {
 
 // Price is a model for product price
 type Price struct {
-	Amount       decimal.Decimal `json:"amount"`
-	PricePerUnit decimal.Decimal `json:"price_per_unit"`
-	Currency     string          `json:"currency"`
+	Value    decimal.Decimal `json:"value"`
+	PerUnit  decimal.Decimal `json:"per_unit"`
+	Currency string          `json:"currency"`
 }
 
 // Details is a model for product details
@@ -35,12 +35,12 @@ type Details struct {
 
 // Package is a model for product package
 type Package struct {
-	Weight float32 `json:"weight"`
-	Height float32 `json:"height"`
-	Width  float32 `json:"width"`
-	Length float32 `json:"length"`
-	Type   string  `json:"type"`
-	Units  int     `json:"units"`
+	Weight string `json:"weight"`
+	Height string `json:"height"`
+	Width  string `json:"width"`
+	Length string `json:"length"`
+	Type   string `json:"type"`
+	Units  int    `json:"units"`
 }
 
 // Availability is a model for product availability
