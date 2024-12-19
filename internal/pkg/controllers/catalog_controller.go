@@ -3,9 +3,10 @@ package controllers
 import (
 	"catalog/internal/pkg/models"
 	"catalog/internal/pkg/services"
-	"github.com/gin-gonic/gin"
 	"net/http"
 	"strconv"
+
+	"github.com/gin-gonic/gin"
 )
 
 type CatalogController struct {

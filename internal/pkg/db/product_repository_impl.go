@@ -3,6 +3,7 @@ package db
 import (
 	"catalog/internal/pkg/models"
 	"encoding/json"
+
 	"github.com/elastic/go-elasticsearch/v8"
 	"github.com/elastic/go-elasticsearch/v8/esutil"
 )

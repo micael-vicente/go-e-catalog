@@ -3,6 +3,7 @@ package services
 import (
 	"catalog/internal/pkg/db"
 	"catalog/internal/pkg/models"
+	"errors"
 )
 
 type CatalogService struct {
@@ -21,6 +22,9 @@ func (cs *CatalogService) GetAllProducts(page int, size int) (models.ProductsPag
 
 // CreateProduct creates a new product
 func (cs *CatalogService) CreateProduct(p *models.Product) error {
+	if p.SKU == "" {
+		return errors.New("SKU is a mandatory field")
+	}
 	return cs.Repo.Create(p)
 }
 

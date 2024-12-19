@@ -4,7 +4,7 @@ A very simple cart service written in Go.
 The service is a REST API that allows you to create, list, update and delete carts and items.
 
 ## Requirements 📖
-- Go 1.19 
+- Go 1.23.4 
 - Docker
 - Docker Compose
 
